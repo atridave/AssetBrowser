@@ -1,0 +1,60 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>19d83133-ef3d-41df-abc6-95a5aace8b78</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>AssetBrowser.py</StartupFile>
+    <SearchPath>C:\Program Files\Autodesk\Maya2016\devkit\other\pymel\extras\completion\py</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>AssetBrowser</Name>
+    <RootNamespace>AssetBrowser</RootNamespace>
+    <InterpreterId>Global|PythonCore|2.7-32</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AssetBrowser.py" />
+    <Compile Include="AssetBrowserUI.py" />
+    <Compile Include="assetBrowserUtil.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="icons_rc.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|2.7-32" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="icons\" />
+    <Folder Include="UI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="convertUIQrc.bat">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="icons.qrc" />
+    <Content Include="icons\add.png" />
+    <Content Include="icons\close.png" />
+    <Content Include="icons\doc.png" />
+    <Content Include="icons\info.png" />
+    <Content Include="icons\openData.png" />
+    <Content Include="icons\remove.png" />
+    <Content Include="UI\AssetBrowser.ui" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
