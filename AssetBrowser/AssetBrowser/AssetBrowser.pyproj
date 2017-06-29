@@ -5,7 +5,8 @@
     <ProjectGuid>19d83133-ef3d-41df-abc6-95a5aace8b78</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>AssetBrowser.py</StartupFile>
-    <SearchPath>C:\Program Files\Autodesk\Maya2016\devkit\other\pymel\extras\completion\py</SearchPath>
+    <SearchPath>
+    </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>AssetBrowser</Name>
@@ -22,6 +23,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="AssetBrowser.py" />
+    <Compile Include="assetBrowserMayaUtil.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="AssetBrowserUI.py" />
     <Compile Include="assetBrowserUtil.py">
       <SubType>Code</SubType>
@@ -36,6 +40,7 @@
     <Folder Include="UI\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assetDataBase.json" />
     <Content Include="convertUIQrc.bat">
       <SubType>Code</SubType>
     </Content>

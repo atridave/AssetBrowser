@@ -1,0 +1,22 @@
+{
+  "Mobu": {
+    "bipad": {
+      "name": "male1",
+      "filePath": "Project\\folder\\mobu\\male1.ma",
+      "image": "Project\\images\\Mobumale1.png"
+    },
+    "bipadFemale": {
+      "name": "female1",
+      "filePath": "Project\\folder\\mobu\\female1.ma",
+      "image": "Project\\images\\MobuFemale1.png"
+    }
+    
+  },
+  "RIG": {
+    "rig1": {
+      "name": "rig1",
+      "filePath": "Project\\folder\\rigs\\rig1.ma",
+      "image": "Project\\images\\rigImg.png"
+    }
+  }
+}
