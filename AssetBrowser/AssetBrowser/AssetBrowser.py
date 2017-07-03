@@ -14,16 +14,13 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
         self.categories = jDataH.getCategory()
         self.categorylistWidget.addItems(self.categories)
         self.categorylistWidget.setCurrentRow(0)
-        assetNames = jDataH.getCategoryObjInfo(self.categories[0],'name')
-        self.assetlistWidget.addItems(assetNames)
-        
+        self.assetlistWidget.setViewMode(QListView.IconMode)
+        autil.SetAssetTextIcon(self.assetlistWidget)
+
 
 
 
 app =  QApplication(sys.argv)
 form =  mainWindow()
-
-
-
 form.show()
 app.exec_()

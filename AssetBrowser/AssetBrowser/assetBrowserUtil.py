@@ -1,5 +1,6 @@
 import json
 import os
+from PySide import QtCore, QtGui
 
 
 class jsonDataHandler(object):
@@ -26,6 +27,27 @@ class jsonDataHandler(object):
         for j in range(0,len(objects)):
             self.objectInfo.append(jsonObj[category][objects[j]][keyInfo])
         return self.objectInfo
+
+class SetAssetTextIcon(object):
+    def __init__(self,parent):
+        self.parent = parent
+        item = QtGui.QListWidgetItem(self.parent)
+        item.setText('AtriImage')
+        item.setIcon(QtGui.QIcon("E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\icons\\openData.png"))
+        item.setSizeHint(QtCore.QSize(75,75))
+
+        item2 = QtGui.QListWidgetItem(self.parent)
+        item2.setText('AtriImage2')
+        item2.setIcon(QtGui.QIcon("E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\icons\\openData.png"))
+        item2.setSizeHint(QtCore.QSize(75,75))
+
+        item3 = QtGui.QListWidgetItem(self.parent)
+        item3.setText('AtriImage3')
+        item3.setIcon(QtGui.QIcon("E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\icons\\openData.png"))
+        item3.setSizeHint(QtCore.QSize(75,75))
+        
+        
+        
 
 
 
