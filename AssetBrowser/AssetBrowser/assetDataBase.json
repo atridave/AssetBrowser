@@ -10,13 +10,40 @@
       "filePath": "Project\\folder\\mobu\\female1.ma",
       "image": "Project\\images\\MobuFemale1.png"
     }
-    
+
+  },
+  "Props": {
+    "cup1": {
+      "name": "cup1",
+      "filePath": "Project\\folder\\Props\\cup1.ma",
+      "image": "Project\\images\\cup1.png"
+    }
   },
   "RIG": {
     "rig1": {
       "name": "rig1",
       "filePath": "Project\\folder\\rigs\\rig1.ma",
-      "image": "Project\\images\\rigImg.png"
+      "image": "Project\\images\\rig1.png"
+    },
+    "rig2": {
+      "name": "rig2",
+      "filePath": "Project\\folder\\rigs\\rig2.ma",
+      "image": "Project\\images\\rig2.png"
+    }
+
+  },
+  "Sets": {
+    "set1": {
+      "name": "set1",
+      "filePath": "Project\\folder\\sets\\set1.ma",
+      "image": "Project\\images\\set1.png"
+    }
+  },
+  "vegitation": {
+    "tree": {
+      "name": "tree1",
+      "filePath": "Project\\folder\\vegitation\\tree1.ma",
+      "image": "Project\\images\\tree.png"
     }
   }
 }
