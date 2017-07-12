@@ -1,14 +1,14 @@
 {
-  "Mobu": {
+  "MotionBuilder": {
     "bipad": {
       "name": "male1",
       "filePath": "Project\\folder\\mobu\\male1.ma",
-      "image": "Project\\images\\Mobumale1.png"
+      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Mocap_rig_male_01.png"
     },
     "bipadFemale": {
       "name": "female1",
       "filePath": "Project\\folder\\mobu\\female1.ma",
-      "image": "Project\\images\\MobuFemale1.png"
+      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Mocap_rig_male_01.png"
     }
 
   },
@@ -19,24 +19,35 @@
       "image": "Project\\images\\cup1.png"
     }
   },
-  "RIG": {
-    "rig1": {
-      "name": "rig1",
-      "filePath": "Project\\folder\\rigs\\rig1.ma",
-      "image": "Project\\images\\rig1.png"
-    },
-    "rig2": {
-      "name": "rig2",
-      "filePath": "Project\\folder\\rigs\\rig2.ma",
-      "image": "Project\\images\\rig2.png"
+  "Weapons": {
+    "pistol": {
+      "name": "pistol1",
+      "filePath": "Project\\folder\\pistol\\pistol1.ma",
+      "image": "Project\\images\\cup1.png"
     }
-
+  },
+  "RIGs": {
+    "camo": {
+      "name": "camo",
+      "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\camo\\camo_rig_01.ma",
+      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\camo_rig_01.png"
+    },
+    "Crow": {
+      "name": "Crow",
+      "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\Crow\\Crow_rig_01.ma",
+      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Crow_rig_01.png"
+    },
+    "Dog": {
+      "name": "Dog",
+      "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\Dog\\Dog_rig_01",
+      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Dog_rig_01.png"
+    }
   },
   "Sets": {
     "set1": {
-      "name": "set1",
       "filePath": "Project\\folder\\sets\\set1.ma",
-      "image": "Project\\images\\set1.png"
+      "image": "Project\\images\\set1.png",
+      "name": "set1"
     }
   },
   "vegitation": {

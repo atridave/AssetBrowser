@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="icons\" />
+    <Folder Include="assetIcons\" />
     <Folder Include="UI\" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +55,7 @@
     <Content Include="icons\info.png" />
     <Content Include="icons\openData.png" />
     <Content Include="icons\remove.png" />
+    <Content Include="rw.json" />
     <Content Include="UI\AssetBrowser.ui" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
