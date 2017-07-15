@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\user\atri\AssetBrowser\AssetBrowser\AssetBrowser\UI\AssetBrowser.ui'
 #
-# Created: Wed Jul 05 06:36:12 2017
+# Created: Sat Jul 15 23:57:29 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -20,6 +20,7 @@ class Ui_AssetBrowser(object):
         AssetBrowser.setSizePolicy(sizePolicy)
         AssetBrowser.setMinimumSize(QtCore.QSize(1344, 728))
         AssetBrowser.setMaximumSize(QtCore.QSize(1344, 728))
+        AssetBrowser.setStyleSheet("")
         self.centralWidget = QtGui.QWidget(AssetBrowser)
         self.centralWidget.setObjectName("centralWidget")
         self.assetWidget = QtGui.QWidget(self.centralWidget)
@@ -30,6 +31,8 @@ class Ui_AssetBrowser(object):
         self.assetlistWidget.setStyleSheet("")
         self.assetlistWidget.setFrameShape(QtGui.QFrame.StyledPanel)
         self.assetlistWidget.setLineWidth(1)
+        self.assetlistWidget.setSelectionMode(QtGui.QAbstractItemView.MultiSelection)
+        self.assetlistWidget.setViewMode(QtGui.QListView.IconMode)
         self.assetlistWidget.setObjectName("assetlistWidget")
         self.categorylistWidget = QtGui.QListWidget(self.centralWidget)
         self.categorylistWidget.setGeometry(QtCore.QRect(10, 70, 161, 611))
@@ -44,7 +47,9 @@ class Ui_AssetBrowser(object):
         self.categorylistWidget.setObjectName("categorylistWidget")
         self.widget = QtGui.QWidget(self.centralWidget)
         self.widget.setGeometry(QtCore.QRect(10, 10, 161, 51))
-        self.widget.setStyleSheet("border: 2px solid #333")
+        self.widget.setStyleSheet("border: 1px  solid #343434;\n"
+"\n"
+"border-color: rgb(0, 0, 0);")
         self.widget.setObjectName("widget")
         self.categoryLabel = QtGui.QLabel(self.widget)
         self.categoryLabel.setGeometry(QtCore.QRect(7, 11, 83, 30))
@@ -55,6 +60,7 @@ class Ui_AssetBrowser(object):
         self.categoryLabel.setSizePolicy(sizePolicy)
         self.categoryLabel.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.categoryLabel.setStyleSheet("font: 16pt \"Segoe UI\";\n"
+"\n"
 "border:0px solid #333;\n"
 "")
         self.categoryLabel.setObjectName("categoryLabel")
@@ -107,8 +113,10 @@ class Ui_AssetBrowser(object):
         AssetBrowser.setCentralWidget(self.centralWidget)
         self.menuBar = QtGui.QMenuBar(AssetBrowser)
         self.menuBar.setGeometry(QtCore.QRect(0, 0, 1344, 21))
+        self.menuBar.setStyleSheet("")
         self.menuBar.setObjectName("menuBar")
         self.menuFile = QtGui.QMenu(self.menuBar)
+        self.menuFile.setStyleSheet("")
         self.menuFile.setObjectName("menuFile")
         self.menuHelp = QtGui.QMenu(self.menuBar)
         self.menuHelp.setObjectName("menuHelp")
@@ -148,9 +156,7 @@ class Ui_AssetBrowser(object):
 
     def retranslateUi(self, AssetBrowser):
         AssetBrowser.setWindowTitle(QtGui.QApplication.translate("AssetBrowser", "AssetBrowser", None, QtGui.QApplication.UnicodeUTF8))
-        self.categoryLabel.setText(QtGui.QApplication.translate("AssetBrowser", "Category", None, QtGui.QApplication.UnicodeUTF8))
-        self.removeButton.setToolTip(QtGui.QApplication.translate("AssetBrowser", "remove category", None, QtGui.QApplication.UnicodeUTF8))
-        self.addButton.setToolTip(QtGui.QApplication.translate("AssetBrowser", "add category", None, QtGui.QApplication.UnicodeUTF8))
+        self.categoryLabel.setText(QtGui.QApplication.translate("AssetBrowser", "Catagory", None, QtGui.QApplication.UnicodeUTF8))
         self.menuFile.setTitle(QtGui.QApplication.translate("AssetBrowser", "File", None, QtGui.QApplication.UnicodeUTF8))
         self.menuHelp.setTitle(QtGui.QApplication.translate("AssetBrowser", "Help", None, QtGui.QApplication.UnicodeUTF8))
         self.actionOpenDataBase.setText(QtGui.QApplication.translate("AssetBrowser", "OpenDataBase", None, QtGui.QApplication.UnicodeUTF8))

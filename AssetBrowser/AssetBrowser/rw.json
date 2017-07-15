@@ -1,59 +1,66 @@
 {
-    "vegitation": {
-        "tree": {
-            "image": "Project\\images\\tree.png", 
-            "name": "tree1", 
-            "filePath": "Project\\folder\\vegitation\\tree1.ma"
+    "MotionBuilder": {
+        "bipad": {
+            "filePath": "Project\\folder\\mobu\\male1.ma", 
+            "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Mocap_rig_male_01.png", 
+            "name": "male1"
+        }, 
+        "bipadFemale": {
+            "filePath": "Project\\folder\\mobu\\female1.ma", 
+            "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Mocap_rig_male_01.png", 
+            "name": "female1"
+        }
+    }, 
+    "NewJObj2": {
+        "newObjName2": {
+            "filePath": "newObjactFilePath2", 
+            "image": "NewObjectImage2", 
+            "name": "newObjName2"
         }
     }, 
     "Props": {
         "cup1": {
+            "filePath": "Project\\folder\\Props\\cup1.ma", 
             "image": "Project\\images\\cup1.png", 
-            "name": "cup1", 
-            "filePath": "Project\\folder\\Props\\cup1.ma"
-        }
-    }, 
-    "Weapons": {
-        "pistol": {
-            "image": "Project\\images\\cup1.png", 
-            "name": "pistol1", 
-            "filePath": "Project\\folder\\pistol\\pistol1.ma"
-        }
-    }, 
-    "MotionBuilder": {
-        "bipadFemale": {
-            "image": "Project\\images\\MobuFemale1.png", 
-            "name": "female1", 
-            "filePath": "Project\\folder\\mobu\\female1.ma"
-        }, 
-        "bipad": {
-            "image": "Project\\images\\Mobumale1.png", 
-            "name": "male1", 
-            "filePath": "Project\\folder\\mobu\\male1.ma"
-        }
-    }, 
-    "Sets": {
-        "set1": {
-            "image": "Project\\images\\set1.png", 
-            "name": "set1", 
-            "filePath": "Project\\folder\\sets\\set1.ma"
+            "name": "cup1"
         }
     }, 
     "RIGs": {
         "Crow": {
+            "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\Crow\\Crow_rig_01.ma", 
             "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Crow_rig_01.png", 
-            "name": "Crow", 
-            "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\Crow\\Crow_rig_01.ma"
-        }, 
-        "camo": {
-            "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\camo_rig_01.png", 
-            "name": "camo", 
-            "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\camo\\camo_rig_01.ma"
+            "name": "Crow"
         }, 
         "Dog": {
+            "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\Dog\\Dog_rig_01", 
             "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Dog_rig_01.png", 
-            "name": "Dog", 
-            "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\Dog\\Dog_rig_01"
+            "name": "Dog"
+        }, 
+        "camo": {
+            "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\camo\\camo_rig_01.ma", 
+            "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\camo_rig_01.png", 
+            "name": "camo"
+        }
+    }, 
+    "Sets": {
+        "set1": {
+            "filePath": "Project\\folder\\sets\\set1.ma", 
+            "image": "Project\\images\\set1.png", 
+            "name": "set1"
+        }
+    }, 
+    "Weapons": {
+        "pistol": {
+            "filePath": "Project\\folder\\pistol\\pistol1.ma", 
+            "image": "Project\\images\\cup1.png", 
+            "name": "pistol1"
+        }
+    }, 
+    "vegitation": {
+        "tree": {
+            "filePath": "Project\\folder\\vegitation\\tree1.ma", 
+            "image": "Project\\images\\tree.png", 
+            "name": "tree1"
         }
     }
 }

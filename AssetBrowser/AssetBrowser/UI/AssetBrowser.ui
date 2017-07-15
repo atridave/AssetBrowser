@@ -31,6 +31,9 @@
   <property name="windowTitle">
    <string>AssetBrowser</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QWidget" name="assetWidget" native="true">
     <property name="geometry">
@@ -58,6 +61,12 @@
      </property>
      <property name="lineWidth">
       <number>1</number>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::MultiSelection</enum>
+     </property>
+     <property name="viewMode">
+      <enum>QListView::IconMode</enum>
      </property>
     </widget>
    </widget>
@@ -93,7 +102,9 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">border: 2px solid #333</string>
+     <string notr="true">border: 1px  solid #343434;
+
+border-color: rgb(0, 0, 0);</string>
     </property>
     <widget class="QLabel" name="categoryLabel">
      <property name="geometry">
@@ -115,11 +126,12 @@
      </property>
      <property name="styleSheet">
       <string notr="true">font: 16pt &quot;Segoe UI&quot;;
+
 border:0px solid #333;
 </string>
      </property>
      <property name="text">
-      <string>Category</string>
+      <string>Catagory</string>
      </property>
     </widget>
     <widget class="QPushButton" name="removeButton">
@@ -157,9 +169,6 @@ border:0px solid #333;
        <italic>false</italic>
        <bold>false</bold>
       </font>
-     </property>
-     <property name="toolTip">
-      <string>remove category</string>
      </property>
      <property name="styleSheet">
       <string notr="true">border:0px</string>
@@ -214,9 +223,6 @@ border:0px solid #333;
        <bold>false</bold>
       </font>
      </property>
-     <property name="toolTip">
-      <string>add category</string>
-     </property>
      <property name="styleSheet">
       <string notr="true">border:0px</string>
      </property>
@@ -245,7 +251,13 @@ border:0px solid #333;
      <height>21</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QMenu" name="menuFile">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
     <property name="title">
      <string>File</string>
     </property>
