@@ -1,6 +1,7 @@
 import json
-import os
+import os,sys
 from PySide import QtCore, QtGui
+import addCategoryUI
 
 jsonFile =  'E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetDataBase.json'
 #self.jasonFile  = (os.getcwd ()+'\\assetDataBase.json')
@@ -39,8 +40,6 @@ class jsonDataHandler:
         self.addKey(keyDict)
             
     
-
-
 
 jDataH =  jsonDataHandler(jsonFile)
 
@@ -99,15 +98,30 @@ class UiUpdate:
         listWidget.setSortingEnabled(True)
         listWidget.sortItems()
 
+    def invokeAddCategoryUi(self,listWiget):
+        categoryAddUI =  addCategoryDialog(listWiget)
+
+        
+
 
  
+class addCategoryDialog(QtGui.QDialog,addCategoryUI.Ui_addCategory):
+    def __init__(self,listWiget, parent = None):
+        super(addCategoryDialog, self).__init__(parent)
+        self.setupUi(self)
+        self.listWiget  =  listWiget
+        self.addButton.clicked.connect(self.addCategory)
+        self.addlineEdit.setFocus()
+        self.exec_()   
+
+
+    def addCategory(self):
+        categorryName = self.addlineEdit.text()
+        ui =  UiUpdate().addCategory(categorryName)
+        print self.listWiget
+        self.close()
 
 
 
 
-
-class GetUiInfo:
-    
-    def getSelectdItem(self):
-        pass 
 

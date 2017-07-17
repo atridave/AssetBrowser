@@ -7,6 +7,7 @@ import assetBrowserUtil as abUtil
 
 
 
+
 class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
     def __init__(self, parent =None):
         super(mainWindow, self).__init__(parent)
@@ -18,8 +19,7 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
         abUtil.UiUpdate().setItems(self.assetlistWidget,itemName)        
         self.categorylistWidget.itemClicked.connect(self.updateUI)
         self.addButton.clicked.connect(self.addCategory)
-        self.removeButton.clicked.connect(self.removeCategory) 
-        
+        self.removeButton.clicked.connect(self.removeCategory)         
         
     
 
@@ -29,6 +29,8 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
         abUtil.UiUpdate().setItems(self.assetlistWidget,itemName)
 
     def addCategory(self):
+        
+        abUtil.UiUpdate().invokeAddCategoryUi(self.categorylistWidget)
         abUtil.UiUpdate().addCategory('NewObj')
         self.categorylistWidget.clear()
         abUtil.UiUpdate().uiInit(self.categorylistWidget)
@@ -38,10 +40,7 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
             itemRow = self.categorylistWidget.row(item)
 
         self.categorylistWidget.clear()
-        abUtil.UiUpdate().uiInit(self.categorylistWidget,itemRow)
-
-        
-        
+        abUtil.UiUpdate().uiInit(self.categorylistWidget,itemRow)        
         self.updateUI()
 
     def removeCategory(self):
@@ -53,7 +52,10 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
         abUtil.UiUpdate().uiInit(self.categorylistWidget,itemRow)
         self.updateUI()
    
-       
+
+
+
+
 
 
 app =  QApplication(sys.argv)

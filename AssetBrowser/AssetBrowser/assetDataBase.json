@@ -11,6 +11,13 @@
             "name": "female1"
         }
     }, 
+    "NewObj": {
+        "name": {
+            "filePath": "filePath", 
+            "image": "image", 
+            "name": "name"
+        }
+    }, 
     "Props": {
         "cup1": {
             "filePath": "Project\\folder\\Props\\cup1.ma", 
