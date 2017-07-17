@@ -31,6 +31,7 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
     def addCategory(self):
         
         abUtil.UiUpdate().invokeAddCategoryUi(self.categorylistWidget)
+
         abUtil.UiUpdate().addCategory('NewObj')
         self.categorylistWidget.clear()
         abUtil.UiUpdate().uiInit(self.categorylistWidget)
