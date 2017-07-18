@@ -116,9 +116,18 @@ class addCategoryDialog(QtGui.QDialog,addCategoryUI.Ui_addCategory):
 
 
     def addCategory(self):
-        categorryName = self.addlineEdit.text()
-        ui =  UiUpdate().addCategory(categorryName)
-        print self.listWiget
+        categoryName = self.addlineEdit.text()        
+        ui =  UiUpdate()
+        ui.addCategory(categoryName)
+        self.listWiget.clear()
+        ui.uiInit(self.listWiget)
+        
+        newItem = self.listWiget.findItems(categoryName, QtCore.Qt.MatchContains)
+        for item in newItem:
+            itemRow = self.listWiget.row(item)
+        self.listWiget.clear()
+        ui.uiInit(self.listWiget,itemRow) 
+
         self.close()
 
 

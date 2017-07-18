@@ -46,6 +46,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assetDataBase.json" />
+    <Content Include="assetIcons\all_mus.png" />
+    <Content Include="assetIcons\birdWing_rig_01.png" />
+    <Content Include="assetIcons\camo_rig_01.png" />
+    <Content Include="assetIcons\Crow_rig_01.png" />
+    <Content Include="assetIcons\Dog_rig_01.png" />
+    <Content Include="assetIcons\Dragon_rig_01.png" />
+    <Content Include="assetIcons\Hiccup_Rig_01.png" />
+    <Content Include="assetIcons\Lucas_rig_01.png" />
+    <Content Include="assetIcons\Mocap_rig_male_01.png" />
+    <Content Include="assetIcons\Wolf_rig_01.png" />
     <Content Include="convertUIQrc.bat">
       <SubType>Code</SubType>
     </Content>

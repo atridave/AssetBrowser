@@ -11,37 +11,30 @@
             "name": "female1"
         }
     }, 
-    "NewObj": {
-        "name": {
-            "filePath": "filePath", 
-            "image": "image", 
-            "name": "name"
-        }
-    }, 
     "Props": {
         "cup1": {
             "filePath": "Project\\folder\\Props\\cup1.ma", 
             "image": "Project\\images\\cup1.png", 
             "name": "cup1"
         }
-    }, 
-    "RIGs": {
-        "Crow": {
-            "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\Crow\\Crow_rig_01.ma", 
-            "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Crow_rig_01.png", 
-            "name": "Crow"
-        }, 
-        "Dog": {
-            "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\Dog\\Dog_rig_01", 
-            "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Dog_rig_01.png", 
-            "name": "Dog"
-        }, 
-        "camo": {
-            "filePath": "E:\\myProjects\\ProjectAssets\\Rigs\\camo\\camo_rig_01.ma", 
-            "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\camo_rig_01.png", 
-            "name": "camo"
-        }
-    }, 
+    },
+  "RIGs": {
+    "camo_rig_01": {
+      "filePath": "filePath",
+      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\camo_rig_01.png",
+      "name": "camo_rig_01"
+    },
+    "Crow_rig_01": {
+      "filePath": "filePath",
+      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Crow_rig_01.png",
+      "name": "Crow_rig_01"
+    },
+    "Dog_rig_01": {
+      "filePath": "filePath",
+      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Dog_rig_01.png",
+      "name": "Dog_rig_01"
+    }
+  }, 
     "Sets": {
         "set1": {
             "filePath": "Project\\folder\\sets\\set1.ma", 
