@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\user\atri\AssetBrowser\AssetBrowser\AssetBrowser\UI\addCategory.ui'
 #
-# Created: Mon Jul 17 17:57:28 2017
+# Created: Sat Jul 22 15:08:31 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,14 +12,14 @@ from PySide import QtCore, QtGui
 class Ui_addCategory(object):
     def setupUi(self, addCategory):
         addCategory.setObjectName("addCategory")
-        addCategory.resize(175, 25)
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        addCategory.resize(184, 29)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(addCategory.sizePolicy().hasHeightForWidth())
         addCategory.setSizePolicy(sizePolicy)
         addCategory.setMinimumSize(QtCore.QSize(175, 25))
-        addCategory.setMaximumSize(QtCore.QSize(175, 25))
+        addCategory.setMaximumSize(QtCore.QSize(1000, 1000))
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/icons/add.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         addCategory.setWindowIcon(icon)
@@ -38,13 +38,13 @@ class Ui_addCategory(object):
         self.addlineEdit.setObjectName("addlineEdit")
         self.addButton = QtGui.QPushButton(self.widget)
         self.addButton.setGeometry(QtCore.QRect(150, 0, 25, 25))
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.addButton.sizePolicy().hasHeightForWidth())
         self.addButton.setSizePolicy(sizePolicy)
         self.addButton.setMinimumSize(QtCore.QSize(25, 25))
-        self.addButton.setMaximumSize(QtCore.QSize(25, 25))
+        self.addButton.setMaximumSize(QtCore.QSize(1000, 1000))
         self.addButton.setText("")
         self.addButton.setIcon(icon)
         self.addButton.setObjectName("addButton")

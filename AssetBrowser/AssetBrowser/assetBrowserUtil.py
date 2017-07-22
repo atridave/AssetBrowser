@@ -2,6 +2,7 @@ import json
 import os,sys
 from PySide import QtCore, QtGui
 import addCategoryUI
+import icons_rc
 
 jsonFile =  'E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetDataBase.json'
 #self.jasonFile  = (os.getcwd ()+'\\assetDataBase.json')
@@ -49,13 +50,19 @@ jDataH =  jsonDataHandler(jsonFile)
 class UiUpdate:
     
     def uiInit(self,listWidget,selectRow=None):
-        self.categories = jDataH.jObj.keys()
-        listWidget.addItems(self.categories)
+        self.categories = jDataH.jObj.keys()        
+        listWidget.addItems(self.categories)        
         self.sortItems(listWidget)        
        
         if selectRow == None :
             selectRow = 0
         listWidget.setCurrentRow(selectRow)
+        items = []
+        for index in xrange(listWidget.count()):
+             items.append(listWidget.item(index))             
+        labels = [i.text() for i in items]
+        
+
 
     def changeViewMode(self,listWidget,mode):
         
@@ -63,6 +70,14 @@ class UiUpdate:
             listWidget.setViewMode(QtGui.QListView.IconMode)            
         else:
             listWidget.setViewMode(QtGui.QListView.ListMode)
+
+    def itemColors(self,listWidget):
+        colors = ['#1d334b', '#747572']
+        item =  QtGui.QListWidgetItem(listWidget)
+        if (i % 2 == 0):
+            item.setBackground(QtGui.QColor(colors[0]))
+        else:
+            item.setBackground(QtGui.QColor(colors[1]))
 
 
     def addCategory(self,category):
@@ -101,6 +116,10 @@ class UiUpdate:
     def invokeAddCategoryUi(self,listWiget):
         categoryAddUI =  addCategoryDialog(listWiget)
 
+    def invokeAssetContextMenu(self,listWiget,point):
+        addContextManu().myConMenu(point)
+
+
         
 
 
@@ -129,6 +148,8 @@ class addCategoryDialog(QtGui.QDialog,addCategoryUI.Ui_addCategory):
         ui.uiInit(self.listWiget,itemRow) 
 
         self.close()
+
+
 
 
 

@@ -62,11 +62,15 @@
     <Content Include="icons.qrc" />
     <Content Include="icons\add.png" />
     <Content Include="icons\close.png" />
+    <Content Include="icons\edit.png" />
     <Content Include="icons\doc.png" />
+    <Content Include="icons\image.png" />
     <Content Include="icons\info.png" />
     <Content Include="icons\openData.png" />
     <Content Include="icons\remove.png" />
     <Content Include="rw.json" />
+    <Content Include="UI\addAssetWindow.ui" />
+    <Content Include="UI\addCategory.ui" />
     <Content Include="UI\AssetBrowser.ui" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

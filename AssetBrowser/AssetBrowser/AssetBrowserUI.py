@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\user\atri\AssetBrowser\AssetBrowser\AssetBrowser\UI\AssetBrowser.ui'
 #
-# Created: Mon Jul 17 17:57:28 2017
+# Created: Sat Jul 22 15:08:30 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -28,6 +28,7 @@ class Ui_AssetBrowser(object):
         self.assetWidget.setObjectName("assetWidget")
         self.assetlistWidget = QtGui.QListWidget(self.assetWidget)
         self.assetlistWidget.setGeometry(QtCore.QRect(0, 0, 1151, 671))
+        self.assetlistWidget.setContextMenuPolicy(QtCore.Qt.CustomContextMenu)
         self.assetlistWidget.setStyleSheet("")
         self.assetlistWidget.setFrameShape(QtGui.QFrame.StyledPanel)
         self.assetlistWidget.setLineWidth(1)

@@ -6,5 +6,7 @@
   <file>icons/close.png</file>
   <file>icons/doc.png</file>
   <file>icons/info.png</file>
+  <file>icons/edit.png</file>
+  <file>icons/image.png</file>
 </qresource>
 </RCC>
