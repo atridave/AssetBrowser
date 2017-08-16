@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\user\atri\AssetBrowser\AssetBrowser\AssetBrowser\UI\AssetBrowser.ui'
 #
-# Created: Sat Jul 22 15:08:30 2017
+# Created: Wed Aug 16 22:12:22 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -157,6 +157,7 @@ class Ui_AssetBrowser(object):
 
     def retranslateUi(self, AssetBrowser):
         AssetBrowser.setWindowTitle(QtGui.QApplication.translate("AssetBrowser", "AssetBrowser", None, QtGui.QApplication.UnicodeUTF8))
+        self.categorylistWidget.setSortingEnabled(False)
         self.categoryLabel.setText(QtGui.QApplication.translate("AssetBrowser", "Catagory", None, QtGui.QApplication.UnicodeUTF8))
         self.menuFile.setTitle(QtGui.QApplication.translate("AssetBrowser", "File", None, QtGui.QApplication.UnicodeUTF8))
         self.menuHelp.setTitle(QtGui.QApplication.translate("AssetBrowser", "Help", None, QtGui.QApplication.UnicodeUTF8))

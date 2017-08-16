@@ -103,6 +103,9 @@
             <height>25</height>
            </size>
           </property>
+          <property name="insertPolicy">
+           <enum>QComboBox::InsertAlphabetically</enum>
+          </property>
          </widget>
         </item>
         <item>
@@ -129,8 +132,8 @@
            <string/>
           </property>
           <property name="icon">
-           <iconset resource="../icons.qrc">
-            <normaloff>:/icons/add.png</normaloff>:/icons/add.png</iconset>
+           <iconset>
+            <normaloff>C:/Users/Admin/Desktop/Testcons/add.png</normaloff>C:/Users/Admin/Desktop/Testcons/add.png</iconset>
           </property>
          </widget>
         </item>
@@ -253,7 +256,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="assetPathAddButton">
+         <widget class="QPushButton" name="assetPathButton">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -341,7 +344,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="assetPathAddButton_2">
+         <widget class="QPushButton" name="assetImageButton">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>

@@ -2,6 +2,7 @@ import json
 import os,sys
 from PySide import QtCore, QtGui
 import addCategoryUI
+import addAssetWindowUI
 import icons_rc
 
 jsonFile =  'E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetDataBase.json'
@@ -119,7 +120,9 @@ class UiUpdate:
     def invokeAssetContextMenu(self,listWiget,point):
         addContextManu().myConMenu(point)
 
-
+    def invokeAddAssetUI(self,index):
+        self.addAssetWin = addAseetUI(index)
+        self.addAssetWin.show()
         
 
 
@@ -148,6 +151,35 @@ class addCategoryDialog(QtGui.QDialog,addCategoryUI.Ui_addCategory):
         ui.uiInit(self.listWiget,itemRow) 
 
         self.close()
+
+        
+class addAseetUI(QtGui.QMainWindow,addAssetWindowUI.Ui_addAssetWindow):
+    def __init__(self,index, parent = None):
+        super(addAseetUI, self).__init__(parent)
+        self.setupUi(self)
+        self.category = jDataH.jObj.keys()
+        self.categoryComboBox.setInsertPolicy(QtGui.QComboBox.InsertAlphabetically)
+        self.categoryComboBox.addItems(self.category)
+        self.categoryComboBox.model().sort(0)
+        self.categoryComboBox.setCurrentIndex(index)
+        self.assetPathButton.clicked.connect(self.openFileBrowser)
+        self.assetImageButton.clicked.connect(self.openFileBrowser)
+
+    def openFileBrowser(self):
+        path  =  'E:\myProjects\ProjectAssets'
+        dir = '.'
+        QtGui.QFileDialog.getOpenFileName(self,'chooseFile',dir = path,filter = "maya files (*.ma)")
+
+    def openImageBrowser(self):
+        print 'Hello'
+        path  =  'E:\user\atri\AssetBrowser\AssetBrowser\AssetBrowser\assetIcons'
+        #dir = '.'
+        print path
+        QtGui.QFileDialog.getOpenFileName(self,'chooseFile',dir = path,filter = "maya files (*.ma)")
+
+        
+        
+    
 
 
 

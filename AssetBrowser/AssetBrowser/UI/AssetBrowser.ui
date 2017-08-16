@@ -94,6 +94,9 @@
     <property name="styleSheet">
      <string notr="true"/>
     </property>
+    <property name="sortingEnabled">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QWidget" name="widget" native="true">
     <property name="geometry">

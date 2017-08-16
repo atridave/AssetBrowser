@@ -9,6 +9,7 @@ import icons_rc
 
 
 
+
 class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
     def __init__(self, parent =None):
         super(mainWindow, self).__init__(parent)
@@ -68,13 +69,14 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
         self.popMenu.addAction(self.actionExport)  
         self.popMenu.exec_(self.assetlistWidget.mapToGlobal(point))
 
-    #def createActions(self):
-    #    self.addAsset = 'Print hello'
 
     def addAsset(self):
-        print 'I will add asset for you'
-        #import maya.cmds as cmds
-        #cmds.polyCube()
+        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow()) 
+
+        
+        
+
+
     def editAsset(self):
         print 'I will Edit asset for you'
 
@@ -83,9 +85,14 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
 
     def exportAsset(self):
         print 'I will Export seet to Engine'
-   
 
 
+
+
+
+        
+        
+        
 
 
 
