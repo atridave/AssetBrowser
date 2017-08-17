@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\user\atri\AssetBrowser\AssetBrowser\AssetBrowser\UI\AssetBrowser.ui'
 #
-# Created: Wed Aug 16 22:12:22 2017
+# Created: Thu Aug 17 21:27:11 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!

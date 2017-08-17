@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'E:\user\atri\AssetBrowser\AssetBrowser\AssetBrowser\UI\addAssetWindow.ui'
 #
-# Created: Wed Aug 16 22:12:23 2017
+# Created: Thu Aug 17 21:27:12 2017
 #      by: pyside-uic 0.2.15 running on PySide 1.2.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -12,18 +12,24 @@ from PySide import QtCore, QtGui
 class Ui_addAssetWindow(object):
     def setupUi(self, addAssetWindow):
         addAssetWindow.setObjectName("addAssetWindow")
-        addAssetWindow.resize(345, 160)
-        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        addAssetWindow.resize(345, 175)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(addAssetWindow.sizePolicy().hasHeightForWidth())
         addAssetWindow.setSizePolicy(sizePolicy)
         addAssetWindow.setMinimumSize(QtCore.QSize(345, 160))
-        addAssetWindow.setMaximumSize(QtCore.QSize(345, 160))
         self.centralWidget = QtGui.QWidget(addAssetWindow)
         self.centralWidget.setObjectName("centralWidget")
         self.widget = QtGui.QWidget(self.centralWidget)
-        self.widget.setGeometry(QtCore.QRect(0, 0, 345, 150))
+        self.widget.setGeometry(QtCore.QRect(0, 0, 345, 175))
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.widget.sizePolicy().hasHeightForWidth())
+        self.widget.setSizePolicy(sizePolicy)
+        self.widget.setMinimumSize(QtCore.QSize(345, 175))
+        self.widget.setMaximumSize(QtCore.QSize(345, 175))
         self.widget.setObjectName("widget")
         self.layoutWidget = QtGui.QWidget(self.widget)
         self.layoutWidget.setGeometry(QtCore.QRect(11, 11, 316, 128))
@@ -130,6 +136,7 @@ class Ui_addAssetWindow(object):
         self.assetPathButton.setSizePolicy(sizePolicy)
         self.assetPathButton.setMinimumSize(QtCore.QSize(25, 25))
         self.assetPathButton.setMaximumSize(QtCore.QSize(25, 25))
+        self.assetPathButton.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.assetPathButton.setText("")
         icon1 = QtGui.QIcon()
         icon1.addPixmap(QtGui.QPixmap(":/icons/openData.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -153,16 +160,16 @@ class Ui_addAssetWindow(object):
         self.imageLabel.setAlignment(QtCore.Qt.AlignCenter)
         self.imageLabel.setObjectName("imageLabel")
         self.horizontalLayout_4.addWidget(self.imageLabel)
-        self.ssetPathlineEdit_2 = QtGui.QLineEdit(self.layoutWidget)
+        self.assetImagePathlineEdit = QtGui.QLineEdit(self.layoutWidget)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.ssetPathlineEdit_2.sizePolicy().hasHeightForWidth())
-        self.ssetPathlineEdit_2.setSizePolicy(sizePolicy)
-        self.ssetPathlineEdit_2.setMinimumSize(QtCore.QSize(225, 25))
-        self.ssetPathlineEdit_2.setMaximumSize(QtCore.QSize(225, 25))
-        self.ssetPathlineEdit_2.setObjectName("ssetPathlineEdit_2")
-        self.horizontalLayout_4.addWidget(self.ssetPathlineEdit_2)
+        sizePolicy.setHeightForWidth(self.assetImagePathlineEdit.sizePolicy().hasHeightForWidth())
+        self.assetImagePathlineEdit.setSizePolicy(sizePolicy)
+        self.assetImagePathlineEdit.setMinimumSize(QtCore.QSize(225, 25))
+        self.assetImagePathlineEdit.setMaximumSize(QtCore.QSize(225, 25))
+        self.assetImagePathlineEdit.setObjectName("assetImagePathlineEdit")
+        self.horizontalLayout_4.addWidget(self.assetImagePathlineEdit)
         self.assetImageButton = QtGui.QPushButton(self.layoutWidget)
         sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -178,10 +185,17 @@ class Ui_addAssetWindow(object):
         self.assetImageButton.setObjectName("assetImageButton")
         self.horizontalLayout_4.addWidget(self.assetImageButton)
         self.verticalLayout.addLayout(self.horizontalLayout_4)
+        self.updatePushButton = QtGui.QPushButton(self.widget)
+        self.updatePushButton.setGeometry(QtCore.QRect(10, 140, 320, 30))
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Fixed, QtGui.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.updatePushButton.sizePolicy().hasHeightForWidth())
+        self.updatePushButton.setSizePolicy(sizePolicy)
+        self.updatePushButton.setMinimumSize(QtCore.QSize(320, 30))
+        self.updatePushButton.setMaximumSize(QtCore.QSize(320, 30))
+        self.updatePushButton.setObjectName("updatePushButton")
         addAssetWindow.setCentralWidget(self.centralWidget)
-        self.statusBar = QtGui.QStatusBar(addAssetWindow)
-        self.statusBar.setObjectName("statusBar")
-        addAssetWindow.setStatusBar(self.statusBar)
 
         self.retranslateUi(addAssetWindow)
         QtCore.QMetaObject.connectSlotsByName(addAssetWindow)
@@ -192,5 +206,6 @@ class Ui_addAssetWindow(object):
         self.nameLabel.setText(QtGui.QApplication.translate("addAssetWindow", "Name", None, QtGui.QApplication.UnicodeUTF8))
         self.pathLabel.setText(QtGui.QApplication.translate("addAssetWindow", "Path", None, QtGui.QApplication.UnicodeUTF8))
         self.imageLabel.setText(QtGui.QApplication.translate("addAssetWindow", "Image", None, QtGui.QApplication.UnicodeUTF8))
+        self.updatePushButton.setText(QtGui.QApplication.translate("addAssetWindow", "Add", None, QtGui.QApplication.UnicodeUTF8))
 
 import icons_rc

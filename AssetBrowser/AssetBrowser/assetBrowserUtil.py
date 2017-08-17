@@ -163,19 +163,27 @@ class addAseetUI(QtGui.QMainWindow,addAssetWindowUI.Ui_addAssetWindow):
         self.categoryComboBox.model().sort(0)
         self.categoryComboBox.setCurrentIndex(index)
         self.assetPathButton.clicked.connect(self.openFileBrowser)
-        self.assetImageButton.clicked.connect(self.openFileBrowser)
+        self.assetImageButton.clicked.connect(self.openImageBrowser)
+        self.updatePushButton.clicked.connect(self.updateAssets)
 
     def openFileBrowser(self):
-        path  =  'E:\myProjects\ProjectAssets'
-        dir = '.'
-        QtGui.QFileDialog.getOpenFileName(self,'chooseFile',dir = path,filter = "maya files (*.ma)")
+        path  =  'E:\\myProjects\\ProjectAssets'
+        filename = (QtGui.QFileDialog.getOpenFileName(self,'select file',dir = path,filter = "maya files (*.ma)"))[0]
+        self.assetPathlineEdit.setText(filename) 
+        
 
     def openImageBrowser(self):
-        print 'Hello'
-        path  =  'E:\user\atri\AssetBrowser\AssetBrowser\AssetBrowser\assetIcons'
-        #dir = '.'
-        print path
-        QtGui.QFileDialog.getOpenFileName(self,'chooseFile',dir = path,filter = "maya files (*.ma)")
+        path  =  'E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons'
+        filename = (QtGui.QFileDialog.getOpenFileName(self,'select file',dir = path,filter = "image files (*.png)"))[0]
+        self.assetImagePathlineEdit.setText(filename)
+
+    def updateAssets(self):
+        name =  self.assetNamelineEdit.text()
+        filePath =  self.assetPathlineEdit.text()
+        imagePath =  self.assetImagePathlineEdit.text()
+        print name,filePath,imagePath
+        self.close()
+        
 
         
         

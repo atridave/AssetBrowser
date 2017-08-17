@@ -7,22 +7,16 @@
     <x>0</x>
     <y>0</y>
     <width>345</width>
-    <height>160</height>
+    <height>175</height>
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
   </property>
   <property name="minimumSize">
-   <size>
-    <width>345</width>
-    <height>160</height>
-   </size>
-  </property>
-  <property name="maximumSize">
    <size>
     <width>345</width>
     <height>160</height>
@@ -38,8 +32,26 @@
       <x>0</x>
       <y>0</y>
       <width>345</width>
-      <height>150</height>
+      <height>175</height>
      </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>345</width>
+      <height>175</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>345</width>
+      <height>175</height>
+     </size>
     </property>
     <widget class="QWidget" name="layoutWidget">
      <property name="geometry">
@@ -275,6 +287,9 @@
             <height>25</height>
            </size>
           </property>
+          <property name="focusPolicy">
+           <enum>Qt::StrongFocus</enum>
+          </property>
           <property name="text">
            <string/>
           </property>
@@ -322,7 +337,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QLineEdit" name="ssetPathlineEdit_2">
+         <widget class="QLineEdit" name="assetImagePathlineEdit">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
             <horstretch>0</horstretch>
@@ -376,9 +391,39 @@
       </item>
      </layout>
     </widget>
+    <widget class="QPushButton" name="updatePushButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>320</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>320</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>320</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Add</string>
+     </property>
+    </widget>
    </widget>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
