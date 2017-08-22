@@ -40,6 +40,14 @@ class jsonDataHandler:
             keyInfo =  ['name','filePath','image']
         keyDict = {category: {keyInfo[0] : { "name" : keyInfo[0], "filePath" : keyInfo[1] , "image" : keyInfo[2]}}}
         self.addKey(keyDict)
+
+    def updatekey(self,category,keyInfo):
+        dic =  jDataH.jObj[category]
+        keyDict =  {keyInfo[0] : { "name" : keyInfo[0], "filePath" : keyInfo[1] , "image" : keyInfo[2]}}
+        dic.update(keyDict)
+        self.writeJson(self.jObj)
+        
+        
             
     
 
@@ -120,8 +128,8 @@ class UiUpdate:
     def invokeAssetContextMenu(self,listWiget,point):
         addContextManu().myConMenu(point)
 
-    def invokeAddAssetUI(self,index):
-        self.addAssetWin = addAseetUI(index)
+    def invokeAddAssetUI(self,index,assetlistWidget):
+        self.addAssetWin = addAseetUI(index,assetlistWidget)
         self.addAssetWin.show()
         
 
@@ -154,7 +162,7 @@ class addCategoryDialog(QtGui.QDialog,addCategoryUI.Ui_addCategory):
 
         
 class addAseetUI(QtGui.QMainWindow,addAssetWindowUI.Ui_addAssetWindow):
-    def __init__(self,index, parent = None):
+    def __init__(self,index, assetlistWidget,parent = None):
         super(addAseetUI, self).__init__(parent)
         self.setupUi(self)
         self.category = jDataH.jObj.keys()
@@ -165,6 +173,8 @@ class addAseetUI(QtGui.QMainWindow,addAssetWindowUI.Ui_addAssetWindow):
         self.assetPathButton.clicked.connect(self.openFileBrowser)
         self.assetImageButton.clicked.connect(self.openImageBrowser)
         self.updatePushButton.clicked.connect(self.updateAssets)
+        self.assetlistWidget  =  assetlistWidget
+        self.ui =  UiUpdate()
 
     def openFileBrowser(self):
         path  =  'E:\\myProjects\\ProjectAssets'
@@ -181,7 +191,12 @@ class addAseetUI(QtGui.QMainWindow,addAssetWindowUI.Ui_addAssetWindow):
         name =  self.assetNamelineEdit.text()
         filePath =  self.assetPathlineEdit.text()
         imagePath =  self.assetImagePathlineEdit.text()
-        print name,filePath,imagePath
+        category =  self.categoryComboBox.currentText()
+        keyInfo = [name,filePath,imagePath]        
+        jDataH.updatekey(category,keyInfo)
+        
+        self.assetlistWidget.clear()       
+        self.ui.setItems(self.assetlistWidget,category)
         self.close()
         
 

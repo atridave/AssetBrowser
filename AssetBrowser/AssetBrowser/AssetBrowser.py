@@ -71,7 +71,7 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
 
 
     def addAsset(self):
-        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow()) 
+        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow(),self.assetlistWidget) 
 
         
         
