@@ -1,69 +1,69 @@
 {
-  "MotionBuilder": {
-    "bipad": {
-      "filePath": "Project\\folder\\mobu\\male1.ma",
-      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Mocap_rig_male_01.png",
-      "name": "male1"
-    },
-    "bipadFemale": {
-      "filePath": "Project\\folder\\mobu\\female1.ma",
-      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Mocap_rig_male_01.png",
-      "name": "female1"
+    "MotionBuilder": {
+        "bipad": {
+            "filePath": "Project\\folder\\mobu\\male1.ma", 
+            "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Mocap_rig_male_01.png", 
+            "name": "male1"
+        }, 
+        "bipadFemale": {
+            "filePath": "Project\\folder\\mobu\\female1.ma", 
+            "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Mocap_rig_male_01.png", 
+            "name": "female1"
+        }
+    }, 
+    "Props": {
+        "cup1": {
+            "filePath": "Project\\folder\\Props\\cup1.ma", 
+            "image": "Project\\images\\cup1.png", 
+            "name": "cup1"
+        }
+    }, 
+    "RIGs": {
+        "Crow": {
+            "filePath": "E:/myProjects/ProjectAssets/Rigs/Crow/Crow_rig_01.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/Crow_rig_01.png", 
+            "name": "Crow"
+        }, 
+        "DOG": {
+            "filePath": "E:/myProjects/ProjectAssets/Rigs/Dog/Dog_rig_01.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/Dog_rig_01.png", 
+            "name": "DOG"
+        }, 
+        "Wolf": {
+            "filePath": "E:/myProjects/ProjectAssets/Rigs/Wolf/Wolf_rig_01.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/Wolf_rig_01.png", 
+            "name": "Wolf"
+        }, 
+        "birdWing": {
+            "filePath": "E:/myProjects/ProjectAssets/Rigs/birdWing/birdWing_rig_01.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/birdWing_rig_01.png", 
+            "name": "birdWing"
+        }, 
+        "camo": {
+            "filePath": "E:/myProjects/ProjectAssets/Rigs/camo/camo_rig_01.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/camo_rig_01.png", 
+            "name": "camo"
+        }
+    }, 
+    "Sets": {
+        "set1": {
+            "filePath": "Project\\folder\\sets\\set1.ma", 
+            "image": "Project\\images\\set1.png", 
+            "name": "set1"
+        }
+    }, 
+    "Weapons": {
+        "pistol": {
+            "filePath": "Project\\folder\\pistol\\pistol1.ma", 
+            "image": "Project\\images\\cup1.png", 
+            "name": "pistol1"
+        }
+    }, 
+    "vegitation": {
+        "tree": {
+            "filePath": "Project\\folder\\vegitation\\tree1.ma", 
+            "image": "Project\\images\\tree.png", 
+            "name": "tree1"
+        }
     }
-  },
-  "Props": {
-    "cup1": {
-      "filePath": "Project\\folder\\Props\\cup1.ma",
-      "image": "Project\\images\\cup1.png",
-      "name": "cup1"
-    }
-  },
-  "RIGs": {
-    "birdWing": {
-      "filePath": "E:/myProjects/ProjectAssets/Rigs/birdWing/birdWing_rig_01.ma",
-      "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/birdWing_rig_01.png",
-      "name": "birdWing"
-    },
-    "camo_rig_01": {
-      "filePath": "filePath",
-      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\camo_rig_01.png",
-      "name": "camo_rig_01"
-    },
-    "Crow_rig_01": {
-      "filePath": "filePath",
-      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Crow_rig_01.png",
-      "name": "Crow_rig_01"
-    },
-    "Dog_rig_01": {
-      "filePath": "filePath",
-      "image": "E:\\user\\atri\\AssetBrowser\\AssetBrowser\\AssetBrowser\\assetIcons\\Dog_rig_01.png",
-      "name": "Dog_rig_01"
-    },
-    "Lucas_rig_01": {
-      "filePath": "E:/myProjects/ProjectAssets/Rigs/Lucas/Lucas_rig_01.ma",
-      "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/Hiccup_Rig_01.png",
-      "name": "Lucas_rig_01"
-    }
-  },
-  "Sets": {
-    "set1": {
-      "filePath": "Project\\folder\\sets\\set1.ma",
-      "image": "Project\\images\\set1.png",
-      "name": "set1"
-    }
-  },
-  "vegitation": {
-    "tree": {
-      "filePath": "Project\\folder\\vegitation\\tree1.ma",
-      "image": "Project\\images\\tree.png",
-      "name": "tree1"
-    }
-  },
-  "Weapons": {
-    "pistol": {
-      "filePath": "Project\\folder\\pistol\\pistol1.ma",
-      "image": "Project\\images\\cup1.png",
-      "name": "pistol1"
-    }
-  }
 }

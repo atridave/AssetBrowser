@@ -7,9 +7,6 @@ import icons_rc
 
 
 
-
-
-
 class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
     def __init__(self, parent =None):
         super(mainWindow, self).__init__(parent)
@@ -23,8 +20,7 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
         self.addButton.clicked.connect(self.addCategory)
         self.removeButton.clicked.connect(self.removeCategory)       
         self.assetlistWidget.setContextMenuPolicy(Qt.CustomContextMenu)
-        self.connect(self.assetlistWidget, SIGNAL("customContextMenuRequested(QPoint)"), self.assetContextMenu)
-        
+        self.connect(self.assetlistWidget, SIGNAL("customContextMenuRequested(QPoint)"), self.assetContextMenu)        
     
 
     def updateUI(self):
@@ -70,18 +66,22 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
         self.popMenu.exec_(self.assetlistWidget.mapToGlobal(point))
 
 
-    def addAsset(self):
-        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow(),self.assetlistWidget) 
+    def addAsset(self):        
+        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow(),self.assetlistWidget,None)
 
-        
-        
+
+     
 
 
     def editAsset(self):
         print 'I will Edit asset for you'
+        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow(),self.assetlistWidget,True)
 
     def removeAsset(self):
-        print 'I will remove asset for you'
+        category =  self.categorylistWidget.currentItem().text()
+        itemName =  self.assetlistWidget.currentItem().text()
+        self.uiUpdate.removeCategoryItem(category,itemName)
+        self.updateUI()
 
     def exportAsset(self):
         print 'I will Export seet to Engine'

@@ -46,6 +46,11 @@ class jsonDataHandler:
         keyDict =  {keyInfo[0] : { "name" : keyInfo[0], "filePath" : keyInfo[1] , "image" : keyInfo[2]}}
         dic.update(keyDict)
         self.writeJson(self.jObj)
+
+    def removeCategoryItem(self,category,item):
+        itemName =  self.jObj[category][item]['name']
+        del self.jObj[category][itemName]
+        self.writeJson(self.jObj)
         
         
             
@@ -96,6 +101,9 @@ class UiUpdate:
     def removeCategory(self,category):
         jDataH.removekey(category)
 
+    def removeCategoryItem(self,category,item):
+        jDataH.removeCategoryItem(category,item)
+
     def updateListIteams(self,parentWidget,itemName,itemIcon,itemHSize=None,itemVSize=None):
         if itemHSize or itemVSize == None : 
             itemHSize = itemVSize = 150
@@ -128,8 +136,9 @@ class UiUpdate:
     def invokeAssetContextMenu(self,listWiget,point):
         addContextManu().myConMenu(point)
 
-    def invokeAddAssetUI(self,index,assetlistWidget):
-        self.addAssetWin = addAseetUI(index,assetlistWidget)
+    def invokeAddAssetUI(self,index,assetlistWidget,edit):
+        
+        self.addAssetWin = addAseetUI(index,assetlistWidget,edit)
         self.addAssetWin.show()
         
 
@@ -162,9 +171,13 @@ class addCategoryDialog(QtGui.QDialog,addCategoryUI.Ui_addCategory):
 
         
 class addAseetUI(QtGui.QMainWindow,addAssetWindowUI.Ui_addAssetWindow):
-    def __init__(self,index, assetlistWidget,parent = None):
+    def __init__(self,index, assetlistWidget,edit,parent = None):
         super(addAseetUI, self).__init__(parent)
         self.setupUi(self)
+        self.edit = edit
+        if self.edit != None:
+            self.setWindowTitle("EditAsset")
+            
         self.category = jDataH.jObj.keys()
         self.categoryComboBox.setInsertPolicy(QtGui.QComboBox.InsertAlphabetically)
         self.categoryComboBox.addItems(self.category)
