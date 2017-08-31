@@ -10,6 +10,7 @@ def getMayaWindow():
     pointer =  oui.MQtUtil_mainWindow()
     return shiboken.wrapInstance(long(pointer),QWidget)
 
+mayaWin =  getMayaWindow()
 
 def makeThumbnil(filePath):
     path = maya.cmds.playblast(

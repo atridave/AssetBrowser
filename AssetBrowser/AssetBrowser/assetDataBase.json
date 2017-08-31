@@ -34,10 +34,10 @@
             "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/Wolf_rig_01.png", 
             "name": "Wolf"
         }, 
-        "birdWing": {
+        "birdWing ": {
             "filePath": "E:/myProjects/ProjectAssets/Rigs/birdWing/birdWing_rig_01.ma", 
             "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/birdWing_rig_01.png", 
-            "name": "birdWing"
+            "name": "birdWing "
         }, 
         "camo": {
             "filePath": "E:/myProjects/ProjectAssets/Rigs/camo/camo_rig_01.ma", 

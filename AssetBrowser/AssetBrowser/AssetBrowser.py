@@ -59,6 +59,13 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
         self.actionAdd.setIcon(icon)
         self.actionRemove.setIcon(icon1)
         self.actionEdit.setIcon(icon3) 
+
+        self.popMenu.addSeparator()
+        icon4 = QIcon()
+        icon4.addPixmap(QPixmap(":/icons/openData.png"), QIcon.Normal, QIcon.Off)
+        self.actionOpen = QAction('open', self,triggered =  self.openAsset)
+        self.popMenu.addAction(self.actionOpen)  
+        self.actionOpen.setIcon(icon4)
         
         self.popMenu.addSeparator()
         self.actionExport = QAction('Export', self,triggered =  self.exportAsset)
@@ -67,15 +74,16 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
 
 
     def addAsset(self):        
-        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow(),self.assetlistWidget,None)
+        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow(),self.assetlistWidget,None,None,None)
 
 
      
 
 
-    def editAsset(self):
-        print 'I will Edit asset for you'
-        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow(),self.assetlistWidget,True)
+    def editAsset(self):      
+        categoryName =  self.categorylistWidget.currentItem().text()
+        itemName =  self.assetlistWidget.currentItem().text()
+        self.uiUpdate.invokeAddAssetUI(self.categorylistWidget.currentRow(),self.assetlistWidget,True,categoryName,itemName)
 
     def removeAsset(self):
         category =  self.categorylistWidget.currentItem().text()
@@ -85,6 +93,16 @@ class mainWindow(QMainWindow,AssetBrowserUI.Ui_AssetBrowser):
 
     def exportAsset(self):
         print 'I will Export seet to Engine'
+
+    def openAsset(self):
+        categoryName =  self.categorylistWidget.currentItem().text()
+        itemName =  self.assetlistWidget.currentItem().text()
+        print abUtil.jDataH.jObj[categoryName][itemName]['filePath']
+
+        
+
+
+
 
 
 

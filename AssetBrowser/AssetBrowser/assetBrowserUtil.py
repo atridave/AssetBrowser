@@ -136,9 +136,9 @@ class UiUpdate:
     def invokeAssetContextMenu(self,listWiget,point):
         addContextManu().myConMenu(point)
 
-    def invokeAddAssetUI(self,index,assetlistWidget,edit):
+    def invokeAddAssetUI(self,index,assetlistWidget,edit,categoryName,itemName):
         
-        self.addAssetWin = addAseetUI(index,assetlistWidget,edit)
+        self.addAssetWin = addAseetUI(index,assetlistWidget,edit,categoryName,itemName)
         self.addAssetWin.show()
         
 
@@ -171,12 +171,13 @@ class addCategoryDialog(QtGui.QDialog,addCategoryUI.Ui_addCategory):
 
         
 class addAseetUI(QtGui.QMainWindow,addAssetWindowUI.Ui_addAssetWindow):
-    def __init__(self,index, assetlistWidget,edit,parent = None):
+    def __init__(self,index, assetlistWidget,edit,categoryName,itemName,parent = None):
         super(addAseetUI, self).__init__(parent)
         self.setupUi(self)
         self.edit = edit
-        if self.edit != None:
-            self.setWindowTitle("EditAsset")
+        self.categoryName =  categoryName
+        self.itemName =  itemName
+
             
         self.category = jDataH.jObj.keys()
         self.categoryComboBox.setInsertPolicy(QtGui.QComboBox.InsertAlphabetically)
@@ -188,6 +189,21 @@ class addAseetUI(QtGui.QMainWindow,addAssetWindowUI.Ui_addAssetWindow):
         self.updatePushButton.clicked.connect(self.updateAssets)
         self.assetlistWidget  =  assetlistWidget
         self.ui =  UiUpdate()
+       
+
+        if self.edit != None:
+            self.setWindowTitle("EditAsset")
+            self.updatePushButton.setText("Edit")
+            #print self.categoryName
+            #print self.itemName
+            #itemName =  self.jObj[category][item]['name']
+            name  =  jDataH.jObj[categoryName][itemName]['name']
+            filePath =  jDataH.jObj[categoryName][itemName]['filePath']
+            image =  jDataH.jObj[categoryName][itemName]['image']
+            self.assetNamelineEdit.setText(name)
+            self.assetPathlineEdit.setText(filePath)
+            self.assetImagePathlineEdit.setText(image)
+
 
     def openFileBrowser(self):
         path  =  'E:\\myProjects\\ProjectAssets'
