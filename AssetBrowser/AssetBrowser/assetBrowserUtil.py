@@ -207,7 +207,7 @@ class addAseetUI(QtGui.QMainWindow,addAssetWindowUI.Ui_addAssetWindow):
 
     def openFileBrowser(self):
         path  =  'E:\\myProjects\\ProjectAssets'
-        filename = (QtGui.QFileDialog.getOpenFileName(self,'select file',dir = path,filter = "maya files (*.ma)"))[0]
+        filename = (QtGui.QFileDialog.getOpenFileName(self,'select file',dir = path,filter = "maya files (*.mb)"))[0]
         self.assetPathlineEdit.setText(filename) 
         
 

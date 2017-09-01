@@ -12,10 +12,30 @@
         }
     }, 
     "Props": {
-        "cup1": {
-            "filePath": "Project\\folder\\Props\\cup1.ma", 
-            "image": "Project\\images\\cup1.png", 
-            "name": "cup1"
+        "FrameMA": {
+            "filePath": "E:/myProjects/ProjectAssets/Props/FrameMA.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/FrameMA.0000.png", 
+            "name": "FrameMA"
+        }, 
+        "Vase01_STD": {
+            "filePath": "E:/myProjects/ProjectAssets/Props/Vase01_STD.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/Vase01_STD.0000.png", 
+            "name": "Vase01_STD"
+        }, 
+        "Vase32_STD": {
+            "filePath": "E:/myProjects/ProjectAssets/Props/Vase32_STD.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/Vase32_STD.0000.png", 
+            "name": "Vase32_STD"
+        }, 
+        "candleWhite_m6": {
+            "filePath": "E:/myProjects/ProjectAssets/Props/candleWhite_m6.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/candleWhite_m6.mb.0000.png", 
+            "name": "candleWhite_m6"
+        }, 
+        "hourglass": {
+            "filePath": "E:/myProjects/ProjectAssets/Props/hourglass.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/hourglass.0000.png", 
+            "name": "hourglass"
         }
     }, 
     "RIGs": {
@@ -53,17 +73,127 @@
         }
     }, 
     "Weapons": {
-        "pistol": {
-            "filePath": "Project\\folder\\pistol\\pistol1.ma", 
-            "image": "Project\\images\\cup1.png", 
-            "name": "pistol1"
+        "AK47 _scope": {
+            "filePath": "E:/myProjects/ProjectAssets/weapons/AK47 _scope.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/AK47 _scope.0000.png", 
+            "name": "AK47 _scope"
+        }, 
+        "ChainGun": {
+            "filePath": "E:/myProjects/ProjectAssets/weapons/ChainGun.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/ChainGun.0000.png", 
+            "name": "ChainGun"
+        }, 
+        "Deagle": {
+            "filePath": "E:/myProjects/ProjectAssets/weapons/Deagle.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/Deagle.0000.png", 
+            "name": "Deagle"
+        }, 
+        "Dragon Axe": {
+            "filePath": "E:/myProjects/ProjectAssets/weapons/Dragon Axe.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/Dragon Axe.0000.png", 
+            "name": "Dragon Axe"
+        }, 
+        "KA-BAR_USMC_black_knife": {
+            "filePath": "E:/myProjects/ProjectAssets/weapons/KA-BAR_USMC_black_knife.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/KA-BAR_USMC_black_knife.0000.png", 
+            "name": "KA-BAR_USMC_black_knife"
+        }, 
+        "M-16": {
+            "filePath": "E:/myProjects/ProjectAssets/weapons/M-16.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/M-16.0000.png", 
+            "name": "M-16"
+        }, 
+        "M16": {
+            "filePath": "E:/myProjects/ProjectAssets/weapons/M16.ma", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/M-16.0000.png", 
+            "name": "M16"
+        }, 
+        "ak47": {
+            "filePath": "E:/myProjects/ProjectAssets/weapons/ak47.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/ak47.0000.png", 
+            "name": "ak47"
         }
     }, 
     "vegitation": {
-        "tree": {
-            "filePath": "Project\\folder\\vegitation\\tree1.ma", 
-            "image": "Project\\images\\tree.png", 
-            "name": "tree1"
+        "OC12_1": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC12_1.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC12_1.mb.0000.png", 
+            "name": "OC12_1"
+        }, 
+        "OC12_2": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC12_2.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC12_2.mb.0000.png", 
+            "name": "OC12_2"
+        }, 
+        "OC12_3": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC12_3.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC12_3.mb.0000.png", 
+            "name": "OC12_3"
+        }, 
+        "OC12_4": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC12_4.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC12_4.mb.0000.png", 
+            "name": "OC12_4"
+        }, 
+        "OC12_5": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC12_5.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC12_5.mb.0000.png", 
+            "name": "OC12_5"
+        }, 
+        "OC12_6": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC12_6.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC12_6.mb.0000.png", 
+            "name": "OC12_6"
+        }, 
+        "OC12_7": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC12_7.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC12_7.mb.0000.png", 
+            "name": "OC12_7"
+        }, 
+        "OC12_8": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC12_8.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC12_8.mb.0000.png", 
+            "name": "OC12_8"
+        }, 
+        "OC26_1": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC26_1.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC26_1.mb.0000.png", 
+            "name": "OC26_1"
+        }, 
+        "OC26_2": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC26_2.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC26_2.mb.0000.png", 
+            "name": "OC26_2"
+        }, 
+        "OC26_3": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC26_3.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC26_3.mb.0000.png", 
+            "name": "OC26_3"
+        }, 
+        "OC26_4": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC26_4.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC26_4.mb.0000.png", 
+            "name": "OC26_4"
+        }, 
+        "OC26_5": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC26_5.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC26_5.mb.0000.png", 
+            "name": "OC26_5"
+        }, 
+        "OC26_6": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC26_6.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC26_6.mb.0000.png", 
+            "name": "OC26_6"
+        }, 
+        "OC26_7": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC26_7.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC26_7.mb.0000.png", 
+            "name": "OC26_7"
+        }, 
+        "OC26_8": {
+            "filePath": "E:/myProjects/ProjectAssets/Vegitation/OC26_8.mb", 
+            "image": "E:/user/atri/AssetBrowser/AssetBrowser/AssetBrowser/assetIcons/OC26_8.mb.0000.png", 
+            "name": "OC26_8"
         }
     }
 }
